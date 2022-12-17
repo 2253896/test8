@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épreuve final: Meka Selvarajah</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <ul>
+                <li> 
+                <a href="#accueil">Accueil</a>
+                <a href="#inscription">Inscription</a>
+                <a href="#tableau">Tableau</a>
+                <a href="#article">Articles</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#video">Vidéos</a>
+                <a href="#piedDePage">Pied de page</a>
+            </li>
+            </ul>
+        </nav>
+        <div class="front" id="accueil">
+            <img src="images/fond.jpg" alt="imageAccueil">
+        
+        <div class="entete">
+            <h2>Meka Selvarajah</h2>
+            <h2>College de Maisonneuve</h2>
+            <h2>Technique d'intégration multimédia</h2>
+            <h2>582-1W1 Mise en page Web</h2>
+            <h2>Automne 2022</h2>
+            <h2>TP2</h2>
+        </div>
+    </div>
+     </header>
+    <main>
+        <div class="formulaire" id="inscription">
+            <h2>Inscription</h2>
+            <form action="form">
+                <fieldset>
+                    <legend>Vos informations</legend>
+                    <fieldset class="colonne">
+                        <label> Votre nom: <input type="text"></label>
+                        <label> Votre prénom: <input type="text"></label>
+                        <label> Votre adresse: <input type="text"></label>
+                        <label> Votre courriel: <input type="text" value="xxxxxx@gmail.com"></label>
+                        <label> Votre âge: <input type="number" min="18" max="90"></label>
+                        <label> Téléphone: <input type="text"></label>
+                    </fieldset>
+                    <fieldset class="colonne">
+                        <fieldset>
+                            <legend>Vos préférences</legend>
+                            <label><input type="radio" name="vote"><span></span> Chien</label>
+							<label><input type="radio" name="vote"><span></span> Chat</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Quel type:</legend>
+                            <label><input type="checkbox"> Calme</label>
+                            <label><input type="checkbox"> Énergétique</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Quel sexe: </legend>
+                            <select>
+                                <option value="male">Male</option>
+                                <option value="femele">Femelle</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Vos commentaires</legend>
+                            <textarea  id="comments"  name="text"   rows="10" cols="50" ></textarea>
+                        </fieldset>
+                        <fieldset id="boutons">
+                            <input class="red" type="reset" value="Vider">
+                            <input class="green" type="submit" value="Envoyer">
+                        </fieldset>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </div>
+        <div class="tableau" id="tableau">
+            <h2>Tableau</h2>
+            
+            <table>
+                <caption>Nos disponibiltés pour les visites</caption>
+                <thead>
+                     <tr>
+                    <th>Jours / Heure</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                    <th>Samedi</th>
+                    <th>Dimanche</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="heure">9h00</td>
+                    <td >Ouvert</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">10h00</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">11h00</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">12h00</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">13h00</td>
+                    <td>Ouvert</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">14h00</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td>Ouvert</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">15h00</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+                <tr>
+                    <td class="heure">16h00</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                    <td>Ouvert</td>
+                    <td class="fermer">Fermer</td>
+                    <td class="fermer">Fermer</td>
+                </tr>
+            </tbody>
+            <tr>
+                <td class="heure">17h00</td>
+                <td class="fermer">Fermer</td>
+                <td class="fermer">Fermer</td>
+                <td class="fermer">Fermer</td>
+                <td class="fermer">Fermer</td>
+                <td class="fermer">Fermer</td>
+                <td class="fermer">Fermer</td>
+                <td class="fermer">Fermer</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td class="dernier" colspan="8" >Autres disponibiltés à venir</td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+        <div class="article" id="article">
+            <h2>Articles</h2>
+            <div class="card">
+                <img  src="images/chien.jpg" alt="image chien" width="200" height="300">
+                <div class="text">
+                    <h5>Chien</h5>
+                    <p>Le chien est la sous-espèce domestique du Cnis Iupus, un mammifère de la
+                        famille des canidés.Le loup est l'une des premières espèces animales à avoir
+                        été domestiquée par l'Homme. Le chien est aujourd'hui adopté comme animal de
+                        travail et comme compagnie de compagnie.C'est un animal sportif et actif.
+                        Le cerveau du chien figure parmi les plus performants du règne animal.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img  src="images/chat.jpg" alt="image chat" width="200" height="300">
+                <div class="text">
+                    <h5>Chat</h5>
+                    <p>Le chat est la sous-espèce de la domestication du chat sauvage,
+                        mammifère carnivore de la famille des félidés.Il y a plus d'une
+                        cinquantaine de races reconnues de chat.Le chat est un prédateur
+                        de petites proies comme les rongeurs ou les oiseaux. La vue des
+                        chat est très développé. Son champ de vision est plus étendu 
+                         que celui des humains.</p>
+                </div>
+            </div>
+        </div>
+        <div class="galerie" id="galerie">
+                    <div class="nomGalerie"><h2>Galerie</h2></div>
+                    <figure>
+                    <img class="zoom" src="images/german_shepherd.jpg" alt="german shepherd" width="300" height="200">
+                    <img class="zoom" src="images/husky2.jpg" alt="husky2" width="300" height="200">
+                    <img class="zoom" src="images/persan.jpg" alt="persan" width="300" height="200">
+                    <img class="zoom" src="images/sphynx.jpg" alt="sphynx" width="175" height="200">
+                    <img class="zoom" src="images/norvegien.jpg" alt="norvegien" width="170" height="200">
+                    <img class="zoom" src="images/rottweiller.jpg" alt="rootweiller" width="133" height="200">
+                    <img class="zoom" src="images/husky.jpg" alt="husky" width="125" height="200">
+                   <img class="zoom" src="images/charteau.jpg" alt="charteau" width="150" height="200">
+                   <img class="zoom" src="images/golder_retriever.jpg" alt="golden retriever" width="149" height="200">
+                   <img class="zoom" src="images/bulldog.jpg" alt="bulldog" width="239" height="200">
+                   <img class="zoom" src="images/mainecoon.jpg" alt="maincoon" width="133" height="200">
+                   </figure> 
+        </div>
+        <div class="video" id="video">
+            <h2>Vidéos</h2>
+            <div>
+                <figure>
+                    <iframe class="zoom" width="560" height="315" src="https://www.youtube.com/embed/v0th7UVXEZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Vidéo de chien</figcaption> 
+                </figure>
+                <figure>
+                    <iframe class="zoom" width="560" height="315" src="https://www.youtube.com/embed/WYyck-xLtaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                    <figcaption>Vidéo de chat</figcaption>       
+                </figure>
+            </div>
+        </div>
+        
+    </main>
+     <footer id="piedDePage">
+        <div class="info">
+            <h5>Collège de Maisonneuve</h5>
+            <h5> 3800 R. Sherbrooke E, Montréal, QC H1X 2A2</h5>
+            <h5>Meka Selvarajah</h5>
+            <h5>College de Maisonneuve</h5>
+            <h5>Technique d'intégration multimédia</h5>
+            <h5>582-1W1 Mise en page Web</h5>
+            <h5>Automne 2022</h5>
+            <h5>TP2</h5>
+        </div>
+           <div class="icon"> <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" alt="logoDeGitHub" width="32" height="32">
+            <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000000" alt="logoDeInstagram" width="32" height="32">
+            <img src="https://s2.svgbox.net/social.svg?ic=tiktok&color=000000" alt="logoDeTikTok" width="32" height="32">
+            <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000000" alt="logoDeYoutube" width="32" height="32">
+            <img src="https://s2.svgbox.net/social.svg?ic=gmail&color=000000" alt="logoDeGmail" width="32" height="32">
+        </div>
+            <h5>Avis de confidentialité | Privacy Notice</h5>
+            <div class="recherche">
+                
+             <input type="text" class="text_input" value="Recherche.."  />
+				<button><span>&#128269;</span></button>
+                
+            </div>
+            
+
+        </footer>
+</body>

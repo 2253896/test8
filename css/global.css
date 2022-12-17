@@ -1,0 +1,301 @@
+/*Feuille de style principal*/
+/*Remise de 0 supplémentaire*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(216,207,208 );
+    font-family: 'Franklin Gothic Medium';
+}
+h1{
+    color: black;
+}
+h2{
+    color: rgb(105,113,132 );
+    text-align: left;
+}
+/*MENU*/
+nav{ 
+   background-color: rgb(105,113 ,132 );
+   padding-top: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   position: fixed;
+   width: 100%;
+   padding-bottom: 10px;
+   text-decoration: none;
+}
+ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav:hover{
+    border: 2px solid black;
+}
+a:hover{
+    background-color: rgb(40, 93, 117);
+    border: 1px solid rgb(214, 243, 250);
+    padding: 5px;
+    color:rgb(255, 255, 255);
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.front img{
+    max-width: 100%;
+}
+/*ACCUEIL*/
+
+.entete{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between ;
+ padding-top: 70px;
+ width: 50%;
+ height: 50%;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ padding-bottom: 40px;
+ font-size: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(40, 90, 110);
+    font-family: fantasy;
+}
+/*FORMULAIRE*/
+form{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+	min-width: 400px;
+	max-width: 800px; 
+    background-color: rgb(105,113, 132);
+    font-size: 16px;
+}
+.formulaire{
+    padding: 120px;
+}
+input{
+    padding: 3px;
+    font-size: 14px;
+}
+input[type="checkbox"], input{
+    height: 25px;
+    width: 130px;
+}
+textarea{
+    padding: 6px;
+    font-size: 14px;
+    background-color: rgb(240, 240, 240);
+}
+select{
+    padding:6px;
+    font-size: 14px;
+}
+label{
+    width: 240px;
+    display: inline-block;
+    text-align: right;
+}
+fieldset{
+    background-color: rgb(216,210,208);
+    padding: 10px;
+}
+#boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 80%;
+	padding: 2%;
+}
+.green:hover{
+    background-color: green;
+}
+.red:hover{
+    background-color:red;
+}
+/*TABLEAU*/
+.tableau{
+    width: 100%;
+    height: 100%;
+    padding: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+th, td{
+    border : 1px solid  rgb(78, 214, 210);
+    background-color: rgb(105, 113, 132);
+    padding: 10px;
+    width:15%;
+    color: white;
+  }
+td{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.fermer:hover{
+    background-color: red;
+}
+td:hover{
+    background-color: green;
+}
+.heure{
+    background-color: rgb(105, 113, 132);
+    color: white;
+}
+caption{
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(105, 113, 132);
+    color: white;
+}
+
+/*ARTICLE*/
+.article{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: 580px;
+    margin: 50px;
+    box-shadow: 5px 5px 25px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s ease-out;
+}
+.card:hover{
+    background-color: rgb(105, 145, 168);
+    color: black;
+}
+.text{
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    display: flex;
+    flex-wrap: wrap;
+}
+article h2{
+    text-align: center;
+}
+
+
+/*VIDEO*/
+.nomVideo{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.video>div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*GALERIE*/
+.galerie{
+    padding: 100px;
+
+}
+.nomGalerie{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.galerie figure{
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:2vmin;
+
+    
+}
+.zoom{
+
+    transition: transform .2s;
+    width: 250px;
+    height: 250px;
+}
+.zoom:hover{
+    transform: scale(1.5);
+}
+/*Video*/
+.video{
+    padding: 100px;
+}
+.video>div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video figure{
+    flex: 0 0 50%;
+  
+}
+
+.video iframe {
+    width: 100%;
+}
+
+.video figure figcaption{
+    font-style: italic;
+    text-align: center;
+    padding: 1%;
+}
+/*FOOTER*/
+footer{
+    background-color: rgb(105,113, 132);
+    color: black;
+    height: 150px;
+    width: 100%;
+}
+ .recherche{
+    margin-left:700px;
+
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.icon{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    flex-direction: row;
+}
+footer h5{
+    text-align: right;
+}
+
+
+
+
+
+
+
